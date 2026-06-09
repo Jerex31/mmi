@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VPTours - Agence de Voyages</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>VPTours</h1>
+            <p>Explorez le monde avec nous !</p>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#sites">Nos sites</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>L'agence VPTours souhaite proposer à ses clients les trois meilleurs sites touristiques au niveau international.</p>
+        </section>
+        <section id="sites">
+            <h2>Nos trois sites touristiques</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="te.jpg" alt="Tour Eiffel">
+                    <h3>Tour Eiffel</h3>
+                    <p><strong>Pays :</strong> France</p>
+                    <p>La Tour Eiffel est située à Paris, au cœur de la France. Elle est facilement accessible par métro ou bus. Construite en 1889 pour l'Exposition universelle, elle est un symbole de l'ingénierie moderne et attire environ 7 millions de visiteurs par an. Sa beauté architecturale en fait une icône mondiale.</p>
+                </div>
+                <div class="card">
+                    <img src="murchine.webp" alt="Grande Muraille de Chine">
+                    <h3>Grande Muraille de Chine</h3>
+                    <p><strong>Pays :</strong> Chine</p>
+                    <p>La Grande Muraille s'étend sur plus de 21 000 km à travers la Chine. L'accès peut être moyen selon les sections, souvent via des excursions organisées. Construite il y a plus de 2 000 ans pour protéger l'empire, elle est un trésor historique et accueille environ 10 millions de visiteurs par an. Sa beauté naturelle et historique est incomparable.</p>
+                </div>
+                <div class="card">
+                    <img src="statuelib.jpeg" alt="Statue de la Liberté">
+                    <h3>Statue de la Liberté</h3>
+                    <p><strong>Pays :</strong> États-Unis</p>
+                    <p>La Statue de la Liberté se trouve sur Liberty Island, à New York. Elle est facilement accessible par ferry depuis Manhattan. Offert par la France en 1886, elle symbolise la liberté et attire environ 4 millions de visiteurs par an. Sa beauté monumentale et son histoire en font un site emblématique.</p>
+                </div>
+            </div>
+            <h3>Tableau récapitulatif</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Site</th>
+                        <th>Pays</th>
+                        <th>Accès</th>
+                        <th>Visites/an</th>
+                        <th>Beauté</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tour Eiffel</td>
+                        <td>France</td>
+                        <td>Facile</td>
+                        <td>7 millions</td>
+                        <td>Haute</td>
+                    </tr>
+                    <tr>
+                        <td>Grande Muraille de Chine</td>
+                        <td>Chine</td>
+                        <td>Moyen</td>
+                        <td>10 millions</td>
+                        <td>Haute</td>
+                    </tr>
+                    <tr>
+                        <td>Statue de la Liberté</td>
+                        <td>États-Unis</td>
+                        <td>Facile</td>
+                        <td>4 millions</td>
+                        <td>Haute</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom"><br><br>
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                
+                <button type="button">Envoyer</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2025 VPTours - <a href="#">Mentions légales</a></p>
+        </footer>
+    </body>
+</html>

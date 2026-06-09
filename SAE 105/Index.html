@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head lang="fr">
+        <link rel="stylesheet" href="style_index.css">
+        <title>
+            Acceuil
+        </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="header">
+            <img src="logo.svg" height="110">
+            <h1>
+                Explorer le monde avec nous !
+            </h1>
+            <div class="menu">
+                <nav>
+                    <a href="#accueil">Accueil</a>
+                    <a href="#destinations">Destinations</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+        <section id="accueil">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="slide">
+                        <img src="Colombo.jpeg" height="100%"">
+                        <div class="caption1">
+                            <h1>
+                                <b>Colombo</b>
+                            </h1>
+                            Ses ruelles colorées, ses marchés parfumés et ses bâtiments au<br>charme colonialcomposent une ville qui invite naturellement à la<br>découverte et à l'évasion.
+                            <br>
+                            <a href="Colombo.html">
+                                <h2>
+                                    &nbsp;Découvrez cette destination >
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="japon.jpg"height="100%">
+                        <div class="caption2">
+                            <h1>
+                                Fujiyoshida
+                            </h1>
+                            Ses sanctuaires discrets, ses ruelles bordées de petites échoppes<br>et la silhouette majestueuse du Fuji composent un décor qui invite à<br>la contemplation et à l’évasion.
+                            <br>
+                            <a href="Fujiyoshida.html">
+                                <h2>
+                                    &nbsp;Découvrez cette destination >
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="Singapore-at-night.jpg"height="100%">
+                        <div class="caption3">
+                            <h1>
+                                Singapour
+                            </h1>
+                            Ses quartiers multiculturels, ses promenades au bord de l’eau et <br>ses lumières nocturnes dessinent une ville qui invite <br>à l’émerveillement et à l’évasion.
+                            <br>
+                            <a href="Singapour.html">
+                                <h2>
+                                    &nbsp;Découvrez cette destination >
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Destinations">
+            <h1>
+                Nos destinations
+            </h1>
+            <div class="destinations">
+                <a href="Singapour.html">
+                    <fieldset id="fsingapour">
+                        <center>
+                            <img src="Singapore-at-night.jpg" height="110px" width="200px">
+                        </center>
+                        <h3>
+                            Singapour
+                        </h3>
+                        <p>
+                            Séjour : 7 jours / 6 nuits
+                        </p>
+                        <p>
+                            à partir de <b>1 200 €</b>
+                        </p>
+                    </fieldset>
+                </a>
+                <a href="Colombo.html">
+                    <fieldset id="fcolombo">
+                        <center>
+                            <img src="Colombo.jpeg" height="110px" width="200px">
+                        </center>
+                        <h3>
+                            Colombo, Sri Lanka
+                        </h3>
+                        <p>
+                            Séjour : 7 jours / 6 nuits
+                        </p>
+                        <p>
+                            à partir de <b>1 200 €</b>
+                        </p>
+                    </fieldset>
+                </a>
+                <a href="Fujiyoshida">
+                    <fieldset id="ffujiyoshida">
+                        <center>
+                            <img src="japon.jpg" height="110px" width="200px">
+                        </center>
+                        <h3>
+                            Colombo, Sri Lanka
+                        </h3>
+                        <p>
+                            Séjour : 7 jours / 6 nuits
+                        </p>
+                        <p>
+                            à partir de <b>1 200 €</b>
+                        </p>
+                    </fieldset>
+                </a>
+            </div>
+        </section>
+        <script>
+            const carouselInner = document.querySelector('.carousel-inner');
+            let currentIndex = 0;
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % 3;
+                carouselInner.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+                setTimeout(nextSlide, 3000);
+            }
+
+            setTimeout(nextSlide, 3000);
+        </script>
+        <div class="footer">
+            <div class="contact">
+                <h2>
+                    Contactez nous
+                </h2>
+                <h1>
+                    <b>
+                        Vous souhaitez voyager avec nous ?
+                    </b>
+                </h1>
+                <p>
+                    © VPTours - 2025
+                </p>
+            </div>
+            <div class="emailing">
+                <form>
+                    <h2>
+                        News letter
+                    </h2>
+                    <input type="checkbox">Je souhaite m'abonner à la newsletter de VPTours.
+                    <br>
+                    <input type="email" placeholder="E-mail" required>
+                    <button>
+                        Envoyer
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
